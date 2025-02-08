@@ -1,0 +1,89 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #282a36;
+  color: #f8f8f2;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  background-color: #44475a;
+  border: 2px solid #f8f8f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 50px; /* Add spacing above the main div */
+}
+
+h1 {
+  color: #ff79c6;
+  text-shadow: 2px 2px #000;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #50fa7b;
+  color: #282a36;
+  border: 2px solid #f8f8f2;
+  text-transform: uppercase;
+  box-shadow: 2px 2px #000;
+}
+
+button img {
+  filter: none;
+  fill: #f8f8f2;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  min-height: 30px;
+  color: #ff79c6;
+  text-shadow: 2px 2px #000;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #f8f8f2;
+  background-color: #282a36;
+  color: #f8f8f2;
+  box-shadow: 2px 2px #000;
+}
+
+#delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+li:nth-child(odd) {
+  background-color: #6272a4;
+}
+
+li:nth-child(even) {
+  background-color: #44475a;
+}
+
+li span {
+  display: inline-block;
+  width: calc(100% - 40px);
+}
