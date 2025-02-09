@@ -1,6 +1,7 @@
 // Get names from local storage or default array
 function getNames() {
-  return JSON.parse(localStorage.getItem("names")) || ["ad.renochro.me", "erin.onyx", "sky.aghast", "atmafreq", "turbolazr", "throwgoats"];
+  const defaultNames = ["Netflix", "Hulu", "Prime", "Disney+", "Criterion", "Mubi", "Shudder", "Kanopy", "Tubi"];
+  return JSON.parse(localStorage.getItem("names")) || defaultNames;
 }
 
 // Save names to local storage
