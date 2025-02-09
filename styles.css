@@ -1,13 +1,14 @@
 :root {
-  --page-bg-color: #282a36;
-  --header-color: #ff79c6;
-  --input-text-color: #f8f8f2;
-  --input-bg-color: #282a36;
-  --button-color: #50fa7b;
-  --button-border-color: #f8f8f2;
-  --container-bg-color: #44475a;
-  --container-border-color: #f8f8f2;
-  --delete-icon-color: #f8f8f2;
+  --page-bg-color: #1e1e1e;
+  --header-color: #ffcc00;
+  --input-text-color: #ffffff;
+  --input-bg-color: #333333;
+  --button-color: #ff6600;
+  --button-border-color: #ffcc00;
+  --container-bg-color: #2b2b2b;
+  --container-border-color: #ffcc00;
+  --delete-icon-color: #ff0000;
+  --border-radius: 0.25rem;
 }
 
 body {
@@ -26,7 +27,8 @@ body {
   text-align: left;
   padding: 20px;
   background-color: var(--container-bg-color);
-  border: 2px solid var(--container-border-color);
+  border: thin solid var(--container-border-color);
+  border-radius: var(--border-radius);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 50px; /* Add spacing above the main div */
 }
@@ -42,7 +44,8 @@ button {
   cursor: pointer;
   background-color: var(--button-color);
   color: var(--page-bg-color);
-  border: 2px solid var(--button-border-color);
+  border: thin solid var(--button-border-color);
+  border-radius: var(--border-radius);
   text-transform: uppercase;
   box-shadow: 2px 2px #000;
 }
@@ -64,7 +67,8 @@ button img {
 input[type="text"] {
   padding: 10px;
   font-size: 16px;
-  border: 2px solid var(--button-border-color);
+  border: thin solid var(--button-border-color);
+  border-radius: var(--border-radius);
   background-color: var(--input-bg-color);
   color: var(--input-text-color);
   box-shadow: 2px 2px #000;
@@ -88,7 +92,7 @@ li {
 }
 
 li:nth-child(odd) {
-  background-color: #6272a4;
+  background-color: #444444;
 }
 
 li:nth-child(even) {
