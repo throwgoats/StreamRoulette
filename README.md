@@ -16,7 +16,7 @@ I use this to pick streamers but you could use it for practically anything you n
 - Keeps the list of names and last choice in local storage
 
 ## Usage
-1. Clone the repo and open `index.html` file in your web browser
+1. Clone the repo and open `index.html` file in your web browser\
    (or just use web version at https://streamroulette.netlify.app).
 2. Use the input field and "Add Name" button to add new names
 3. Tap the "Roll" button to choose the next streamer
