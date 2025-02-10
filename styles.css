@@ -4,12 +4,9 @@
   --input-text-color: white;
   --input-bg-color: #333;
   --button-color: #d40;
-  --button-border-color: #fc0;
-  --container-bg-color: #2b2b2b;
-  --container-border-color: #fc0;
+  --button-border-color: rgba(255, 255, 255, 0.3);
   --delete-icon-color: rgba(0, 0, 0, 0.2);
   --border-radius: 0.35rem;
-  --li-alt-color: #333;
 }
 
 body {
@@ -25,13 +22,8 @@ div {
   max-width: 600px;
   text-align: left;
   padding: 2rem;
-  /* background-color: var(--container-bg-color); */
-  /* border: thin solid var(--container-border-color); */
-  /* border-radius: var(--border-radius); */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
 }
 
-/* Remove browser built-in selection halos */
 button, input, textarea, span {
   outline: none;
 }
@@ -56,15 +48,12 @@ section p {
   /* #result */
   margin: 2rem;
   font-size: 3em;
-  /* font-weight: bold; */
   min-height: 4.5rem;
-  /* color: var(--header-color); */
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* color: var(--header-color); */
   text-shadow: 2px 2px black;
   font-weight: lighter;
 }
@@ -76,11 +65,10 @@ h2 {
 button {
   padding: 0.5rem 0.75rem;
   cursor: pointer;
-  background-color: var(--button-color);
+  background-color: transparent;
   border: thin solid var(--button-border-color);
   border-radius: var(--border-radius);
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 button svg {
@@ -90,11 +78,10 @@ button svg {
 
 input[type="text"] {
   padding: 10px;
-  border: thin solid var(--button-border-color);
-  border-radius: var(--border-radius);
-  background-color: var(--input-bg-color);
+  border: 0;
+  border-bottom: thin solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
   color: var(--input-text-color);
-  box-shadow: 2px 2px #000;
 }
 
 #delete {
@@ -120,19 +107,11 @@ li,
 form {
   display: flex;
   align-items: stretch;
-  gap: 0.5rem;
-}
-
-li:nth-child(odd) {
-  /* background-color: var(--li-alt-color); */
-}
-
-li:nth-child(even) {
-  /* background-color: var(--container-bg-color); */
 }
 
 li span {
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
   padding: 0 1rem;
 }
 
@@ -141,5 +120,8 @@ form input {
   flex: 1;
   display: flex;
   align-items: center;
-  border-radius: var(--border-radius);
+}
+
+form {
+  gap: 0.5rem;
 }
