@@ -3,11 +3,11 @@
   --header-color: #fc0;
   --input-text-color: white;
   --input-bg-color: #333;
-  --button-color: #f60;
+  --button-color: #d40;
   --button-border-color: #fc0;
   --container-bg-color: #2b2b2b;
   --container-border-color: #fc0;
-  --delete-icon-color: #f00;
+  --delete-icon-color: #d00;
   --border-radius: 0.25rem;
   --li-alt-color: #333;
 }
@@ -26,7 +26,6 @@ div {
   max-width: 600px;
   width: 100%;
   text-align: left;
-  margin: 2rem;
   padding: 2rem;
   background-color: var(--container-bg-color);
   border: thin solid var(--container-border-color);
@@ -34,15 +33,15 @@ div {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header {
-  margin-bottom: 2rem;
+div,
+section {
+  margin: 2rem 0;
 }
 
 section {
-  margin: 2rem;
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-items: stretch;
 }
 
 section p {
@@ -53,6 +52,7 @@ section p {
   min-height: 4.5rem;
   color: var(--header-color);
   text-shadow: 2px 2px #000;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 0.5rem 0.75rem;
   font-size: 16px;
   cursor: pointer;
   background-color: var(--button-color);
@@ -72,9 +72,9 @@ button {
   box-shadow: 2px 2px #000;
 }
 
-button img {
+button svg {
   filter: none;
-  fill: var(--delete-icon-color);
+  fill: currentColor;
 }
 
 input[type="text"] {
@@ -89,16 +89,25 @@ input[type="text"] {
 
 #delete {
   background-color: transparent;
+  color: var(--delete-icon-color);
   cursor: pointer;
   border: 0;
+}
+
+#delete img {
+  filter: none;
+  fill: var(--delete-icon-color);
 }
 
 ul {
   margin-bottom: 2rem;
 }
-li {
+
+li,
+form {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 li:nth-child(odd) {
@@ -109,7 +118,7 @@ li:nth-child(even) {
   background-color: var(--container-bg-color);
 }
 
-li span {
-  display: inline-block;
-  width: calc(100% - 40px);
+li span,
+form input {
+  flex: 1;
 }
