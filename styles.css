@@ -88,16 +88,17 @@ input[type="text"] {
   color: var(--input-text-color);
 }
 
+#add,
 #delete {
   background-color: transparent;
   color: var(--delete-icon-color);
+  font-weight: bold;
   cursor: pointer;
   border: 0;
 }
 
-#delete img {
-  filter: none;
-  fill: var(--delete-icon-color);
+#add {
+  font-size: 1.6em;
 }
 
 ul {
@@ -124,8 +125,4 @@ form input {
   flex: 1;
   display: flex;
   align-items: center;
-}
-
-form {
-  gap: 0.5rem;
 }
