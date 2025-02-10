@@ -7,15 +7,16 @@
   --button-border-color: #fc0;
   --container-bg-color: #2b2b2b;
   --container-border-color: #fc0;
-  --delete-icon-color: #d00;
+  --delete-icon-color: rgba(0, 0, 0, 0.2);
   --border-radius: 0.35rem;
   --li-alt-color: #333;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--page-bg-color);
-  color: var(--input-text-color);
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+  background: radial-gradient(circle, #415a77, #2b3a4d);
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -24,10 +25,20 @@ div {
   max-width: 600px;
   text-align: left;
   padding: 2rem;
-  background-color: var(--container-bg-color);
-  border: thin solid var(--container-border-color);
-  border-radius: var(--border-radius);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* background-color: var(--container-bg-color); */
+  /* border: thin solid var(--container-border-color); */
+  /* border-radius: var(--border-radius); */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
+}
+
+/* Remove browser built-in selection halos */
+button, input, textarea, span {
+  outline: none;
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 div,
@@ -45,16 +56,17 @@ section p {
   /* #result */
   margin: 2rem;
   font-size: 3em;
-  font-weight: bold;
+  /* font-weight: bold; */
   min-height: 4.5rem;
-  color: var(--header-color);
+  /* color: var(--header-color); */
   text-shadow: 2px 2px #000;
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--header-color);
+  /* color: var(--header-color); */
   text-shadow: 2px 2px black;
+  font-weight: lighter;
 }
 
 h2 {
@@ -101,6 +113,9 @@ ul {
   margin-bottom: 2rem;
 }
 
+li {
+  margin: 0.5rem 0;
+}
 li,
 form {
   display: flex;
@@ -109,14 +124,15 @@ form {
 }
 
 li:nth-child(odd) {
-  background-color: var(--li-alt-color);
+  /* background-color: var(--li-alt-color); */
 }
 
 li:nth-child(even) {
-  background-color: var(--container-bg-color);
+  /* background-color: var(--container-bg-color); */
 }
 
 li span {
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 0 1rem;
 }
 
@@ -125,4 +141,5 @@ form input {
   flex: 1;
   display: flex;
   align-items: center;
+  border-radius: var(--border-radius);
 }

@@ -45,7 +45,7 @@ function displayNamesList() {
     nameSpan.onblur = updateName;
     const deleteButton = document.createElement("button");
     deleteButton.id = "delete";
-    deleteButton.innerHTML = '<img src="trash-can.svg" alt="Delete">';
+    deleteButton.innerHTML = 'X';
     deleteButton.onclick = () => deleteName(index);
     listItem.appendChild(nameSpan);
     listItem.appendChild(deleteButton);
