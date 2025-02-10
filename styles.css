@@ -1,18 +1,19 @@
 :root {
   --page-bg-color: #1e1e1e;
-  --header-color: #ffcc00;
-  --input-text-color: #ffffff;
-  --input-bg-color: #333333;
-  --button-color: #ff6600;
-  --button-border-color: #ffcc00;
+  --header-color: #fc0;
+  --input-text-color: white;
+  --input-bg-color: #333;
+  --button-color: #f60;
+  --button-border-color: #fc0;
   --container-bg-color: #2b2b2b;
-  --container-border-color: #ffcc00;
-  --delete-icon-color: #ff0000;
+  --container-border-color: #fc0;
+  --delete-icon-color: #f00;
   --border-radius: 0.25rem;
+  --li-alt-color: #333;
 }
 
 body {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--page-bg-color);
   color: var(--input-text-color);
   display: flex;
@@ -21,21 +22,42 @@ body {
   padding: 0;
 }
 
-.container {
-  max-width: 800px;
+div {
+  max-width: 600px;
   width: 100%;
   text-align: left;
-  padding: 20px;
+  margin: 2rem;
+  padding: 2rem;
   background-color: var(--container-bg-color);
   border: thin solid var(--container-border-color);
   border-radius: var(--border-radius);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-top: 50px; /* Add spacing above the main div */
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+section {
+  margin: 2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+section p {
+  /* #result */
+  margin: 2rem;
+  font-size: 3em;
+  font-weight: bold;
+  min-height: 4.5rem;
+  color: var(--header-color);
+  text-shadow: 2px 2px #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--header-color);
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px black;
 }
 
 button {
@@ -55,15 +77,6 @@ button img {
   fill: var(--delete-icon-color);
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  min-height: 30px;
-  color: var(--header-color);
-  text-shadow: 2px 2px #000;
-}
-
 input[type="text"] {
   padding: 10px;
   font-size: 16px;
@@ -76,23 +89,20 @@ input[type="text"] {
 
 #delete {
   background-color: transparent;
-  border: none;
   cursor: pointer;
+  border: 0;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  margin-bottom: 2rem;
 }
-
 li {
-  margin: 10px 0;
   display: flex;
   align-items: center;
 }
 
 li:nth-child(odd) {
-  background-color: #444444;
+  background-color: var(--li-alt-color);
 }
 
 li:nth-child(even) {
