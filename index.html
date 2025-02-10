@@ -16,11 +16,15 @@
       <p id="result">Up Next&hellip;</p>
       <button onclick="displayRandomName()">Roll</button>
     </section>
-    <ul id="namesList"></ul>
-    <form onsubmit="addName(); return false;">
-      <input type="text" id="newName" placeholder="Enter new name">
-      <button type="submit">Add Name</button>
-    </form>
+    <section>
+      <ul id="namesList"></ul>
+      <form onsubmit="addName(); return false;">
+        <input type="text" id="newName" placeholder="Enter new name">
+        <button type="submit">
+          <img src="plus-icon.svg" alt="Add">
+        </button>
+      </form>
+    </section>
   </div>
   <script src="script.js"></script>
 </body>
