@@ -1,11 +1,11 @@
 # StreamRoulette
 I watch a lot of movies, and subscribe to a ton of streaming services. But finding a movie to actually watch can be daunting when faced with the paradoxes of paradox of choice, from filtering my Letterboxd watchlist to all the individual queues on each service. Too much!
 
-And I feel like some of the services I pay for don't get used as often, either because their selection is all great (Criterion, Mubi) or the catalog runs crazy deep (Prime). Intimidating!
+And some of the services I pay for don't get used as often, either because of their great selection (Criterion, Mubi) or the catalog is just so vast (Prime, Tubi). Intimidating!
 
-One thing that has helped me even the odds is to determine first which service to watch and browse from there, either by scrolling though what's in that service's queue, or filtering the Letterboxd watchlist by the chosen service and sorting by random. One less choice!
+One thing that has helped even the odds is by first determining which service to watch and then browse from there, either by scrolling though what's in that service's queue, or filtering my Letterboxd watchlist by that service and sorting by random. One less choice!
 
-**StreamRoulette** is a dumb little web app that helps you randomly select a name from a list of streaming channels. It allows you to add, edit, and delete names from the list, and ensures that the same service is not selected consecutively. It keeps both your list and your last choice in local storage so you don't lose 'em.
+**StreamRoulette** is a dumb little web app that helps you by randomly selecting a name from your list of streaming channels. It allows you to add, edit, and delete names from the list, and ensures that the same service is not selected consecutively. It keeps both your list and your last choice in local storage so you don't lose 'em.
 
 I use this to pick streamers but you could use it for practically anything you need to get a hit on, like where to grab dinner, what chore to do next, whatever! But you know you're not actually going to follow the choice you roll for dinner, right? You're just going to keep rolling until it lands on what you really want, which I guess is just another way to use the app. There's prolly a psychological term for that, like "choice assertion" or some bullshit.
 
