@@ -75,12 +75,6 @@ img[width][height] { /* Preserve aspect ratio */
   height: auto;
 }
 
-img[src$=".svg"] { /* Let SVG scale without boundaries */
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-
 textarea:not([rows]) {
   form-sizing: normal;
   min-height: 10em;

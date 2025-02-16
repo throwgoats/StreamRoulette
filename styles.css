@@ -101,6 +101,20 @@ input[type="text"] {
   font-size: 1.6em;
 }
 
+footer {
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  color: var(--button-border-color);
+}
+
+a img {
+  margin: auto;
+  width: 3rem;
+}
+
 ul {
   margin-bottom: 2rem;
 }
