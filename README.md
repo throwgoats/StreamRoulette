@@ -29,4 +29,6 @@ I use this to pick streamers but you could use it for practically anything you n
 ## License
 This project is licensed under the MIT License.
 
+---
+
 ![Screenshot](screenshot.png)
