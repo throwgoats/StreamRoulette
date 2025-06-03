@@ -32,29 +32,6 @@ function displayRandomName() {
   localStorage.setItem("prevSelections", JSON.stringify(prevSelections));
 }
 
-// Display list of names
-function displayNamesList() {
-  const names = getNames();
-  const namesList = document.getElementById("namesList");
-  namesList.innerHTML = '';
-  names.forEach((name, index) => {
-    const listItem = document.createElement("li");
-    const nameSpan = document.createElement("span");
-    nameSpan.textContent = name;
-    nameSpan.contentEditable = true;
-    nameSpan.spellcheck = false;
-    nameSpan.onblur = updateName;
-    nameSpan.setAttribute('data-index', index);
-    const deleteButton = document.createElement("button");
-    deleteButton.id = "delete";
-    deleteButton.innerHTML = 'X';
-    deleteButton.onclick = () => deleteName(index);
-    listItem.appendChild(nameSpan);
-    listItem.appendChild(deleteButton);
-    namesList.appendChild(listItem);
-  });
-}
-
 // Add new name
 function addName() {
   const newName = document.getElementById("newName").value;
@@ -85,5 +62,28 @@ function deleteName(index) {
   displayNamesList();
 }
 
-// Load list on page load
+// Display list of names
+function displayNamesList() {
+  const names = getNames();
+  const namesList = document.getElementById("namesList");
+  namesList.innerHTML = '';
+  names.forEach((name, index) => {
+    const listItem = document.createElement("li");
+    const nameSpan = document.createElement("span");
+    const deleteButton = document.createElement("button");
+    nameSpan.textContent = name;
+    nameSpan.contentEditable = true;
+    nameSpan.spellcheck = false;
+    nameSpan.onblur = updateName;
+    nameSpan.setAttribute('data-index', index);
+    deleteButton.id = "delete";
+    deleteButton.innerHTML = 'X';
+    deleteButton.onclick = () => deleteName(index);
+    listItem.appendChild(nameSpan);
+    listItem.appendChild(deleteButton);
+    namesList.appendChild(listItem);
+  });
+}
+
+// Fire it up
 window.onload = displayNamesList;
