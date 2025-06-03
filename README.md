@@ -31,4 +31,4 @@ This project is licensed under the MIT License.
 
 ---
 
-![Screenshot](screenshot.png)
+![Screenshot](img/screenshot.png)
