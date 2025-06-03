@@ -42,6 +42,7 @@ function displayNamesList() {
     const nameSpan = document.createElement("span");
     nameSpan.textContent = name;
     nameSpan.contentEditable = true;
+    nameSpan.spellcheck = false;
     nameSpan.onblur = updateName;
     nameSpan.setAttribute('data-index', index);
     const deleteButton = document.createElement("button");
