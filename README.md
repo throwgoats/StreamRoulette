@@ -1,5 +1,3 @@
-![Screenshot](screenshot.png)
-
 # StreamRoulette
 I watch a lot of movies, and subscribe to a lot of streaming services. But finding a movie to actually watch can be daunting when faced with the paradoxes of paradox of choice, from filtering my Letterboxd watchlist to managing all the individual queues on each service. Too much!
 
@@ -30,3 +28,5 @@ I use this to pick streamers but you could use it for practically anything you n
 
 ## License
 This project is licensed under the MIT License.
+
+![Screenshot](screenshot.png)
