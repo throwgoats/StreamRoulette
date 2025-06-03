@@ -63,6 +63,7 @@ function addName() {
     displayNamesList();
     document.getElementById("newName").value = '';
   }
+  return false;
 }
 
 // Update a name in the list
