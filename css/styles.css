@@ -24,11 +24,11 @@ div {
   padding: 2rem;
 }
 
-button, input, textarea, span {
+button, input, span {
   outline: none;
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus, input:focus {
   outline: none;
   box-shadow: none;
 }
