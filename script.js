@@ -43,6 +43,7 @@ function displayNamesList() {
     nameSpan.textContent = name;
     nameSpan.contentEditable = true;
     nameSpan.onblur = updateName;
+    nameSpan.setAttribute('data-index', index);
     const deleteButton = document.createElement("button");
     deleteButton.id = "delete";
     deleteButton.innerHTML = 'X';
@@ -70,7 +71,7 @@ function addName() {
 function updateName(event) {
   const updatedName = event.target.textContent;
   const names = getNames();
-  const index = Array.from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
+  const index = parseInt(event.target.getAttribute('data-index'), 10);
   names[index] = updatedName;
   saveNames(names);
 }
