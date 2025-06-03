@@ -9,7 +9,7 @@ function saveNames(names) {
   localStorage.setItem("names", JSON.stringify(names));
 }
 
-// Display a random name
+// Roll 'em
 function displayRandomName() {
   const names = getNames();
   const prevSelections = JSON.parse(localStorage.getItem("prevSelections")) || [];
@@ -32,7 +32,7 @@ function displayRandomName() {
   localStorage.setItem("prevSelections", JSON.stringify(prevSelections));
 }
 
-// Display the list of names
+// Display list of names
 function displayNamesList() {
   const names = getNames();
   const namesList = document.getElementById("namesList");
@@ -53,7 +53,7 @@ function displayNamesList() {
   });
 }
 
-// Add a new name
+// Add new name
 function addName() {
   const newName = document.getElementById("newName").value;
   if (newName) {
@@ -75,7 +75,7 @@ function updateName(event) {
   saveNames(names);
 }
 
-// Delete a name from the list
+// Delete name from list
 function deleteName(index) {
   const names = getNames();
   names.splice(index, 1);
@@ -83,5 +83,5 @@ function deleteName(index) {
   displayNamesList();
 }
 
-// Display the names list on page load
+// Load list on page load
 window.onload = displayNamesList;
